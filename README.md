@@ -93,6 +93,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
 - Normalizes run speed across all weapons. 
 - You may want to change the default speed from `250` to `260`
+- You can change this in the generated rngfix config file or with `!rs_playerspeed 260`
 
 10. Speedometer by Zee: https://github.com/zSkyworld/zSkyworld
 - Adds a simple velocity HUD with `!speedometer`
