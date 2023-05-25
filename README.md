@@ -27,7 +27,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 17. Navigate back to your root `C:\srcds` directory.
 18. Right click `srcds.exe` and click `Create shortcut`
 19. Right click the newly created shortcut, and click `Properties`.
-20. In the target line, copy paste the following after the existing text: `srcds -console -game cstrike +sv_lan 1`. Add `-tickrate 100` if you want to play tricksurf.
+20. In the target line, copy paste the following after the existing text: `srcds -console -game cstrike +sv_lan 1 +map de_dust`. Add `-tickrate 100` if you want to play tricksurf.
 - If done right, the target line should look something like this: `C:\srcds\srcds.exe srcds -console -game cstrike -insecure +sv_lan 1 +map de_dust`
 21. Add any maps you want to play from this repository by dropping them into the `srcds\cstrike\maps` directory: https://github.com/OuiSURF/Surf_Maps
 22. Run the shortcut as admin, and your server should start! You can join the server by moving to the Local/LAN tab of your in-game server browser. 
