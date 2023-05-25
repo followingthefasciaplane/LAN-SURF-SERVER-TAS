@@ -22,7 +22,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 
 7. Download the latest version of Sourcemod: https://www.sourcemod.net/downloads.php?branch=stable
 
-8. Drop both the `addons` and the `cfg` directories from the Sourcemod download directly into your `cstrike` directory, once again.
+8. Drop both the `addons` and the `cfg` directories from the Sourcemod download directly into your `srcds\cstrike` directory, once again.
 
 9. Download this entire repository.
 
@@ -55,22 +55,25 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Note: You should open CSS before running the server, because Steam thinks that you are already running the game otherwise.
 
 23. Type `!map mapname` in chat to change maps.
-- Type !god in chat to remove fall damage. If you die you can type !respawn.
+- Type `!god` in chat to remove fall damage. If you die you can type `!respawn`
 - Some maps may require you to raise `sv_maxvelocity`
-- Open the Source Tool Assist menu with !sta (more instructions below).
-- Enable/Disable Autostrafe with !strafe.
-- Enable/Disable Speedometer with !speedometer.
+- Open the Source Tool Assist menu with `!sta` (more instructions below).
+- Enable/Disable Autostrafe with `!strafe`
+- Enable/Disable Speedometer with `!speedometer`
 - You may need to load a map twice for it to generate a nav file.
 
 ## Included in this repo:
 1. Source Tool Assist by Crash Fort, see guide on how to use here: https://github.com/crashfort/SourceToolAssist
-- This plugin supports real-time run-rewinding and fast-forwarding with keybinds, bind keys to +sm_rewind and +sm_fastforward. It also supports zoning and a timer, and replay bots. If there's a render bug in the replay bot, you can fix this by typing !cvar sv_force_transmit_ents 1 in chat. Only Sourcemod can change this cvar.
+- This plugin supports real-time run-rewinding and fast-forwarding with keybinds, bind keys to `+sm_rewind` and `+sm_fastforward`
+- It also supports zoning, a timer, and replay bots. 
+- This tool can also be used for non-TAS replay recording and run timing. Significantly more lightweight than a surftimer.
+- If there's a render bug in the replay bot, you can fix this by typing `!cvar sv_force_transmit_ents 1` in chat. Only Sourcemod can change this cvar.
 
 2. Tickrate enabler by daemon32: https://github.com/daemon32/tickrate_enabler
-- Allows for the -tickrate launch option in the shortcut.
+- Allows for the `-tickrate` launch option in the shortcut.
 
 3. RNGfix by jason-e: https://github.com/jason-e/rngfix
-- Vast improvements to RNG physics. For Trick.surf uphill is disabled, but it probably won't make a difference in TAS. (Source: Frag).
+- Vast improvements to RNG physics. For Trick.surf, uphill is disabled, but it probably won't make a difference in TAS. (Source: Frag).
 
 4. Ramp bug fix by Gammacase & Momentum Mod: https://github.com/GAMMACASE/MomSurfFix
 - Fixes surf ramp bugs.
@@ -79,16 +82,17 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Allows for autobunnyhopping.
 
 6. Deluxe Godmode by DarthNinja: https://forums.alliedmods.net/showthread.php?p=979550
-- Allows for the !god command. Typing `god` in console doesn't always work.
+- Allows for the `!god` command. Typing `god` in console doesn't always work.
 
 7. Autostrafe by CloudRick: https://forums.alliedmods.net/showthread.php?p=2080600
-- Adds an !strafe command that enables or disables autostrafing 100% synchronised with your mouse movements.
+- Adds an `!strafe` command that enables or disables autostrafing 100% synchronised with your mouse movements.
 
 8. HeadBugFix by Gammacase & Momentum Mod: https://github.com/GAMMACASE/HeadBugFix
 - Fixes the head boundary box popping up when ducking.
 
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
-- Normalizes run speed across all weapons.
+- Normalizes run speed across all weapons. 
+- You may want to change the default speed from 250 to 260.
 
 10. Speedometer by Zee: https://github.com/zSkyworld/zSkyworld
 - Adds a simple velocity HUD with !speedometer.
@@ -98,21 +102,23 @@ These are all compatible with CSGO but you will need to adjust a few things.
 
 1. Instead of `app_update 232330 validate` in SteamCMD, type `app_update 740 validate` in SteamCMD.
 
-2. Remove the tickrate enabler and the bhop plugin as CSGO does not require these.
+2. Remove the tickrate enabler and the bhop plugin as CSGO does not require these. 
+- There's a separate enabler for CSGO here: https://github.com/zer0k-z/tickrate_enabler_csgo
+- You only need this if you are going to run 85.3 or 102.4 tick. CSGO natively supports 64 and 128.
 
 3. Add the following cvars to your `server.cfg`:
-- sv_clamp_unsafe_velocities 0
-- sv_autobunnyhopping 1
-- sv_staminajumpcost 0
-- sv_staminalandcost 0 
-- sv_staminamax 0
-- sv_staminarecoveryrate 0
-- sv_accelerate_use_weapon_speed 0
+- `sv_clamp_unsafe_velocities 0`
+- `sv_autobunnyhopping 1`
+- `sv_staminajumpcost 0`
+- `sv_staminalandcost 0`
+- `sv_staminamax 0`
+- `sv_staminarecoveryrate 0`
+- `sv_accelerate_use_weapon_speed 0`
+- Change `sv_friction` from `4` to `5.2`
+- Change `sv_mincmdrate` and `sv_minupdaterate` to the desired tickrate.
+- Change `sv_maxcmdrate` and `sv_maxupdaterate` to the desired tickrate + 1.
+- Change `sv_minrate` to the desired tickrate x 1000.
 
-4. You'll need to adjust the network settings for CSGO tickrates aswell. You'll also want to change sv_friction from 4 to 5.2 (CSS vs CSGO default settings).
+6. Adjust the launch shortcut to say `-game csgo` instead of `-game cstrike`.
 
-5. Adjust the launch shortcut to say `-game csgo` instead of `-game cstrike`.
-
-6. Add the Movement Unlocker plugin by Peace-Maker: https://forums.alliedmods.net/showthread.php?t=255298
-
-7. Possibly some other things. I rarely play CSGO, so don't blame me if it doesn't work. There are better options for CSGO.
+7. Add the Movement Unlocker plugin by Peace-Maker: https://forums.alliedmods.net/showthread.php?t=255298
