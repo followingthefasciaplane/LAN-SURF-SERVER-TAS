@@ -51,7 +51,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 
 21. Add any maps you want to play from this repository by dropping them into the `srcds\cstrike\maps` directory: https://github.com/OuiSURF/Surf_Maps
 
-22. Run the shortcut as admin, and your server should start! You can join the server by moving to the Local/LAN tab of your in-game server browser. 
+22. Run the shortcut as admin, and your server should start! You can join the server by moving to the Local/LAN tab of your in-game server browser. Note: You should open CSS before running the server, because Steam thinks that you are already running the game otherwise.
 
 24. Type `!map mapname` in chat to change maps.
 - Type !god in chat to remove fall damage. If you die you can type !respawn.
