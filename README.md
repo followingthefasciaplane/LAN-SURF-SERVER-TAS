@@ -61,6 +61,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Enable/Disable Autostrafe with `!strafe`
 - Enable/Disable Speedometer with `!speedometer`
 - You may need to load a map twice for it to generate a nav file.
+- You may want to change default runspeed from `250` to `260` with `!rs_playerspeed`
 
 ## Included in this repo:
 1. Source Tool Assist by Crash Fort, see guide on how to use here: https://github.com/crashfort/SourceToolAssist
