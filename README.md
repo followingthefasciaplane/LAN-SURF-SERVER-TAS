@@ -1,6 +1,6 @@
 # Counter-Strike: Source LAN Surf Server with TAS
 
-This is a small repository I've created to guide people on how to create a LAN server with Crash Forts TAS tools and a seamless offline surfing experience.
+This is a small repository I've created to guide people on how to create a LAN server with Crash Forts TAS tools and a seamless offline surfing experience. See the note at the end for CSGO.
 
 ## Steps
 
