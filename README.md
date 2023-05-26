@@ -61,7 +61,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Enable/Disable Autostrafe with `!strafe`
 - Enable/Disable Speedometer with `!speedometer`
 - You may need to load a map twice for it to generate a nav file.
-- You may want to change default runspeed from `250` to `260` with `!rs_playerspeed`
+- You may want to change default runspeed from `250` to `260` with `!rcon sm_rs_playerspeed 260`
 
 ## Included in this repo:
 1. Source Tool Assist by Crash Fort, see guide on how to use here: https://github.com/crashfort/SourceToolAssist
@@ -94,7 +94,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
 - Normalizes run speed across all weapons. 
 - You may want to change the default speed from `250` to `260`
-- You can change this in the generated rngfix config file or with `!rs_playerspeed 260`
+- You can change this in the generated rngfix config file or with `!rcon sm_rs_playerspeed 260`
 
 10. Speedometer by Zee: https://github.com/zSkyworld/zSkyworld
 - Adds a simple velocity HUD with `!speedometer`
