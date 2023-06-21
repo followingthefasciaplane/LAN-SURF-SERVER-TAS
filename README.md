@@ -108,7 +108,7 @@ These are all compatible with CSGO but you will need to adjust a few things.
 - You only need this if you are going to run 85.3 or 102.4 tick. CSGO natively supports 64 and 128.
 - If you are going to run 85.3 or 102.4 you will need to change your rates in the server.cfg, too.
 
-3. Use the CSGO cvar.
+3. Use the CSGO server.cfg.
 
 6. Adjust the launch shortcut to say `-game csgo` instead of `-game cstrike`.
 
