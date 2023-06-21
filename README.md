@@ -28,7 +28,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 
 10. Drop the `addons` and the `cfg` directories from this repository into your `srcds\cstrike` directory, for the final time.
 
-11. Go into the `srcds\cstrike\cfg` directory and rename either `server (trick).cfg` or `server (skill.cfg)` to just `server.cfg`, depending on which type of surf you want to play.
+11. Go into the `srcds\cstrike\cfg` directory and rename either `server (tricksurf).cfg` or `server (skillsurf).cfg` to just `server.cfg`, depending on which type of surf you want to play.
 
 12. Now open Counter-Strike: Source, join a server and type `status` in console.
 
@@ -61,7 +61,6 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Enable/Disable Autostrafe with `!strafe`
 - Enable/Disable Speedometer with `!speedometer`
 - You may need to load a map twice for it to generate a nav file.
-- You may want to change default runspeed from `250` to `260` with `!rcon sm_rs_playerspeed 260`
 
 ## Included in this repo:
 1. Source Tool Assist by Crash Fort, see guide on how to use here: https://github.com/crashfort/SourceToolAssist
@@ -107,19 +106,9 @@ These are all compatible with CSGO but you will need to adjust a few things.
 2. Remove the tickrate enabler and the bhop plugin as CSGO does not require these. 
 - There's a separate enabler for CSGO here: https://github.com/zer0k-z/tickrate_enabler_csgo
 - You only need this if you are going to run 85.3 or 102.4 tick. CSGO natively supports 64 and 128.
+- If you are going to run 85.3 or 102.4 you will need to change your rates in the server.cfg, too.
 
-3. Add the following cvars to your `server.cfg`:
-- `sv_clamp_unsafe_velocities 0`
-- `sv_autobunnyhopping 1`
-- `sv_staminajumpcost 0`
-- `sv_staminalandcost 0`
-- `sv_staminamax 0`
-- `sv_staminarecoveryrate 0`
-- `sv_accelerate_use_weapon_speed 0`
-- Change `sv_friction` from `4` to `5.2`
-- Change `sv_mincmdrate` and `sv_minupdaterate` to the desired tickrate.
-- Change `sv_maxcmdrate` and `sv_maxupdaterate` to the desired tickrate + 1.
-- Change `sv_minrate` to the desired tickrate x 1000.
+3. Use the CSGO cvar.
 
 6. Adjust the launch shortcut to say `-game csgo` instead of `-game cstrike`.
 
