@@ -60,6 +60,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Open the Source Tool Assist menu with `!sta` (more instructions below).
 - Enable/Disable Autostrafe with `!strafe`
 - Enable/Disable Speedometer with `!speedometer`
+- Bind a key to `+sm_rewind` and another to `+sm_fastforward`
 - You may need to load a map twice for it to generate a nav file.
 
 ## Included in this repo:
