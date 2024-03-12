@@ -26,7 +26,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 
 9. Download this entire repository.
 
-10. Drop the `addons` and the `cfg` directories from this repository into your `srcds\cstrike` directory, for the final time.
+10. Drop the `addons` and the `cfg` directories from this repository into your `srcds\cstrike` directory, for the final time (overwrite if asked).
 
 11. Go into the `srcds\cstrike\cfg` directory and rename either `server (tricksurf).cfg` or `server (skillsurf).cfg` to just `server.cfg`, depending on which type of surf you want to play.
 
