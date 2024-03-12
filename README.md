@@ -37,16 +37,17 @@ This is a small repository I've created to guide people on how to create a LAN s
 14. Navigate to the `srcds\cstrike\addons\sourcemod\configs` directory and open `admins_simple.ini`
 
 15. Underneath the existing text, paste your Steam ID in quotation marks followed by `99:z` on the same line, if done correctly it should look like  this: `"STEAM_0:1:XXXXX" "99:z"`
+    -Add the same SteamID on two lines with STEAM_0:1 and STEAM_0:0. Only one works sometimes.
 
-16. Save `admins_simple.ini`
+17. Save `admins_simple.ini`
 
-17. Navigate back to your root `C:\srcds` directory.
+18. Navigate back to your root `C:\srcds` directory.
 
-18. Right click `srcds.exe` and click `Create shortcut`
+19. Right click `srcds.exe` and click `Create shortcut`
 
-19. Right click the newly created shortcut, and click `Properties`.
+20. Right click the newly created shortcut, and click `Properties`.
 
-20. In the target line, copy paste the following after the existing text: `srcds -console -game cstrike -insecure +sv_lan 1 +map de_dust`. Add `-tickrate 100` if you want to play tricksurf.
+21. In the target line, copy paste the following after the existing text: `srcds -console -game cstrike -insecure +sv_lan 1 +map de_dust`. Add `-tickrate 100` if you want to play tricksurf.
 - If done right, the target line should look something like this: `C:\srcds\srcds.exe srcds -console -game cstrike -insecure +sv_lan 1 +map de_dust`
 
 21. Add any maps you want to play from this repository by dropping them into the `srcds\cstrike\maps` directory: https://github.com/OuiSURF/Surf_Maps
