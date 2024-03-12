@@ -37,7 +37,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 14. Navigate to the `srcds\cstrike\addons\sourcemod\configs` directory and open `admins_simple.ini`
 
 15. Underneath the existing text, paste your Steam ID in quotation marks followed by `99:z` on the same line, if done correctly it should look like  this: `"STEAM_0:1:XXXXX" "99:z"`
-    -Add the same SteamID on two lines with STEAM_0:1 and STEAM_0:0. Only one works sometimes.
+- Add the same SteamID on two lines with STEAM_0:1 and STEAM_0:0. Only one works sometimes.
 
 17. Save `admins_simple.ini`
 
