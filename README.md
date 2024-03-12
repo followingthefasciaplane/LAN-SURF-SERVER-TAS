@@ -59,7 +59,6 @@ This is a small repository I've created to guide people on how to create a LAN s
 - Some maps may require you to raise `sv_maxvelocity`
 - Open the Source Tool Assist menu with `!sta` (more instructions below).
 - Enable/Disable Autostrafe with `!strafe`
-- Enable/Disable Speedometer with `!speedometer`
 - Bind a key to `+sm_rewind` and another to `+sm_fastforward`
 - You may need to load a map twice for it to generate a nav file.
 
@@ -94,8 +93,8 @@ This is a small repository I've created to guide people on how to create a LAN s
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
 - Normalizes run speed across all weapons. 
 
-10. Speedometer by Zee: https://github.com/zSkyworld/zSkyworld
-- Adds a simple velocity HUD with `!speedometer`
+10. Extended Speedometer by kiljon: https://github.com/kiljon/extended-speed-meter?tab=readme-ov-file
+- Adds a simple velocity HUD.
 
 ## CSGO:
 These are all compatible with CSGO but you will need to adjust a few things.
