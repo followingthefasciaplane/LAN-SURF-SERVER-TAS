@@ -93,7 +93,7 @@ This is a small repository I've created to guide people on how to create a LAN s
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
 - Normalizes run speed across all weapons. 
 
-10. Extended Speedometer by kiljon: https://github.com/kiljon/extended-speed-meter?tab=readme-ov-file
+10. Extended Speedometer by kiljon: https://github.com/kiljon/extended-speed-meter
 - Adds a simple velocity HUD.
 
 ## CSGO:
