@@ -98,6 +98,9 @@ If you want to make fun or angled TAS videos, I have some cvar scripts for angle
 10. Extended Speedometer by kiljon: https://github.com/kiljon/extended-speed-meter
 - Adds a simple velocity HUD.
 
+11. Eventqueue Fix by Herman Simensen: https://github.com/hermansimensen/eventqueue-fix
+- Event queue optimizations.
+
 ## CSGO:
 These are all compatible with CSGO but you will need to adjust a few things.
 
