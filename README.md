@@ -1,5 +1,7 @@
 # Counter-Strike: Source LAN Surf Server with TAS
 
+Updated 5/31 for 64bit.
+
 This is a small repository I've created to guide people on how to create a LAN server with Crash Forts TAS tools and a seamless offline surfing experience. See the note at the end for CSGO.
 If you want to make fun or angled TAS videos, I have some cvar scripts for angle-surfing here: https://github.com/followingthefasciaplane/angle-scripts-for-tas
 
@@ -71,17 +73,21 @@ If you want to make fun or angled TAS videos, I have some cvar scripts for angle
 - This tool can also be used for non-TAS replay recording and run timing. Significantly more lightweight than a surftimer.
 - If there's a render bug in the replay bot, you can fix this by typing `!cvar sv_force_transmit_ents 1` in chat. Only Sourcemod can change this cvar.
 
-2. Tickrate enabler by daemon32: https://github.com/daemon32/tickrate_enabler
+2. Tickrate enabler by daemon32: ~~https://github.com/daemon32/tickrate_enabler~~
 - Allows for the `-tickrate` launch option in the shortcut.
+- Update 5/31: 64bit fork by idk1703: https://github.com/idk1703/TickrateEnabler
 
 3. RNGfix by jason-e: https://github.com/jason-e/rngfix
 - Vast improvements to RNG physics. For Trick.surf, uphill is disabled, but it probably won't make a difference in TAS. (Source: Frag).
+- Update 5/31: 64bit
 
 4. Ramp bug fix by Gammacase & Momentum Mod: https://github.com/GAMMACASE/MomSurfFix
 - Fixes surf ramp bugs.
+- Recompiled and updated 5/31 for 64bit
 
-5. Autobhop by Abner: https://forums.alliedmods.net/showthread.php?p=1869895
+5. ~~Autobhop by Abner: https://forums.alliedmods.net/showthread.php?p=1869895~~
 - Allows for autobunnyhopping.
+- Removed 5/31. Obsoleted by new `sv_autobunnyhopping` cvar.
 
 6. Deluxe Godmode by DarthNinja: https://forums.alliedmods.net/showthread.php?p=979550
 - Allows for the `!god` command. Typing `god` in console doesn't always work.
@@ -91,6 +97,7 @@ If you want to make fun or angled TAS videos, I have some cvar scripts for angle
 
 8. HeadBugFix by Gammacase & Momentum Mod: https://github.com/GAMMACASE/HeadBugFix
 - Fixes the head boundary box popping up when ducking.
+- Recompiled and updated 5/31 for 64bit
 
 9. Normalized Run Speed by sneak-it: https://github.com/sneak-it/Normalized-Run-Speed
 - Normalizes run speed across all weapons. 
@@ -100,6 +107,7 @@ If you want to make fun or angled TAS videos, I have some cvar scripts for angle
 
 11. Eventqueue Fix by Herman Simensen: https://github.com/hermansimensen/eventqueue-fix
 - Event queue optimizations.
+- Recompiled and updated 5/31 for 64bit
 
 ## CSGO:
 These are all compatible with CSGO but you will need to adjust a few things.
